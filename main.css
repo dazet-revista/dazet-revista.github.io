@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'Didot Bold';
+  font-style: normal;
+  font-weight: 800;
+  src: url(./didot-bold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Didot Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./didot-regular.ttf) format('truetype');
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -15,20 +30,52 @@ body > * {
   max-width: 100%;
 }
 
+header {
+  padding: 2em 0;
+}
+
 h1 {
-  font-family: Cochin, Cambria, Georgia, Times, 'Times New Roman', serif;
-  font-size: 4em;
+  font-family: 'Didot Bold', Cochin, Cambria, Georgia, Times, 'Times New Roman', serif;
+  font-size: 6em;
+  line-height: 1em;
   text-align: center;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Didot Regular', Cochin, cambria, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.6em;
+  text-align: center;
+  margin: 0;
 }
 
 main {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
+
+.ediciones__izq {
+  order: 1;
+  text-align: right;
+}
+
+.portada {
+  order: 2;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.portada img {
+  max-width: 100%;
+}
+
+.ediciones__der { order: 3; }
+
 
 .ediciones {
   margin: 0;
-  padding: 0;
+  padding: 0 1em;
   list-style: none;
   font-size: 1.2em;
 }
@@ -40,4 +87,25 @@ main {
 
 .ediciones a:hover {
   text-decoration: underline;
+}
+
+
+@media (max-width: 800px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ediciones__izq {
+    order: 2;
+    text-align: left;
+  }
+  .portada {
+    order: 1;
+    max-width: 300px;
+    padding-bottom: 1em;
+  }
+
+  .ediciones a {
+    font-size: 1.5em;
+  }
 }

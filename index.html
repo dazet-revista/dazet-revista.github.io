@@ -2,15 +2,25 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="main.css">
   <title>Dazet</title>
 </head>
 <body>
   <header>
     <h1>DAZET</h1>
+    <h2>2014 - 2024</h2>
   </header>
   <main>
-    <div>
+    <div class="portada">
+      <img
+          srcset="./img/portada-420w.png 420w, ./img/portada.png 709w"
+          sizes="(max-width: 600px) 420px,
+                  709px"
+          src="./img/portada.jpg"
+          alt="DAZET">
+    </div>
+    <div class="ediciones__izq">
       <ul class="ediciones">
         <li><a href="./ediciones/dazet-01.pdf">Dazet Nº 1</a></li>
         <li><a href="./ediciones/dazet-02.pdf">Dazet Nº 2</a></li>
@@ -36,11 +46,11 @@
         <li><a href="./ediciones/dazet-22.pdf">Dazet Nº 22</a></li>
         <li><a href="./ediciones/dazet-23.pdf">Dazet Nº 23</a></li>
         <li><a href="./ediciones/dazet-24.pdf">Dazet Nº 24</a></li>
-        <li><a href="./ediciones/dazet-25.pdf">Dazet Nº 25</a></li>
       </ul>
     </div>
-    <div>
+    <div class="ediciones__der">
       <ul class="ediciones">
+        <li><a href="./ediciones/dazet-25.pdf">Dazet Nº 25</a></li>
         <li><a href="./ediciones/dazet-26.pdf">Dazet Nº 26</a></li>
         <li><a href="./ediciones/dazet-27.pdf">Dazet Nº 27</a></li>
         <li><a href="./ediciones/dazet-28.pdf">Dazet Nº 28</a></li>
@@ -63,6 +73,7 @@
         <li><a href="./ediciones/dazet-45.pdf">Dazet Nº 45</a></li>
         <li><a href="./ediciones/dazet-46.pdf">Dazet Nº 46</a></li>
         <li><a href="./ediciones/dazet-47.pdf">Dazet Nº 47</a></li>
+        <li><a href="./ediciones/dazet-48.pdf">Dazet Nº 48</a></li>
       </ul>
     </div>
   </main>
